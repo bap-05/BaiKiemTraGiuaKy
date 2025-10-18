@@ -3,8 +3,68 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:background="#00BCD4"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ThongTinActivity">
-
+    <TextView
+        android:id="@+id/txt_tt_tieude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NHẬP THÔNG TIN SINH VIN"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/txt_tt_ma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mã sv"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_tt_tieude"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="100dp"/>
+    <TextView
+        android:id="@+id/txt_tt_ten"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tên sv"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_tt_ma"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/txt_tt_diem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Điểm"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_tt_ten"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:id="@+id/txt_tt_xl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xếp loại"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txt_tt_diem"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
