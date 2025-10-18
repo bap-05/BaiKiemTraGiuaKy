@@ -29,6 +29,9 @@ public class MainActivity extends AppCompatActivity {
         addView();
         btn_xn.setOnClickListener(v->{
             Intent intent = new Intent( MainActivity.this, ThongTinActivity.class);
+            intent.putExtra("ma",txt_ma.getText().toString());
+            intent.putExtra("ten",txt_ten.getText().toString());
+            intent.putExtra("diem",txt_diem.getText().toString());
             startActivity(intent);
         });
     }
